@@ -1,0 +1,5 @@
+gtty
+gtty.egg-info/PKG-INFO
+gtty.egg-info/SOURCES.txt
+gtty.egg-info/dependency_links.txt
+gtty.egg-info/top_level.txt
