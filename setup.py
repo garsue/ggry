@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name="gtty",
+    name="ggry",
     version="1.0",
-    scripts=["gtty"],
+    scripts=["ggry"],
     packages=find_packages())
