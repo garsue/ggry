@@ -5,7 +5,7 @@ from __future__ import print_function, division, unicode_literals
 import unittest
 import argparse
 
-import gtty
+import ggry
 
 
 class TestGtty(unittest.TestCase):
@@ -24,5 +24,5 @@ class TestGtty(unittest.TestCase):
 
     def test_build_url(self):
         expect = "http://google.com/search?q=spam+%2B+ham"
-        test = gtty.build_url("spam + ham")
+        test = ggry.build_url("spam + ham")
         self.assertEqual(test, expect)
