@@ -3,8 +3,11 @@
 
 from __future__ import print_function, division, unicode_literals
 import argparse
-import urllib
 import webbrowser
+try:
+    from urllib import parse as parse
+except ImportError:
+    import urllib as parse
 
 
 def parse_args():
@@ -17,7 +20,7 @@ def parse_args():
 
 def build_url(words):
     template = "http://google.com/search?q={0}"
-    quoted = urllib.quote_plus(" ".join(words))
+    quoted = parse.quote_plus(" ".join(words))
     return template.format(quoted)
 
 
