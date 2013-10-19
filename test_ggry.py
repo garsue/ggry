@@ -8,7 +8,7 @@ import argparse
 import ggry
 
 
-class TestGtty(unittest.TestCase):
+class TestGrry(unittest.TestCase):
     def test_arg(self):
         parser = argparse.ArgumentParser()
         parser.add_argument("words", nargs="+")
